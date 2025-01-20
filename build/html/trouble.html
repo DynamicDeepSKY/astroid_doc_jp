@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>トラブルシューティング &mdash; Astroid alpha documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=3d6c492d"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="リカバリー手順" href="recovery.html" />
+    <link rel="prev" title="リモートシステムの構築" href="remotesystem.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Astroid
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Quick Start:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">クイックスタートガイド</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basic.html">Web Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="efinder.html">eFinder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arzoom.html">ARZoom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eaa.html">EAA Stacker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drpole.html">Dr. Pole</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lenscal.html">レンズキャリブレーション</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timelapse.html">タイムラプス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collimation.html">Collimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="systemupdate.html">システムアップデート</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remotesystem.html">リモートシステムの構築</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">TroubleShooting:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">トラブルシューティング</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">一般的な問題</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#efinder">eFinderの問題</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#eaa">EAAスタッカーの問題</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dr-pole">Dr. Poleの問題</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="recovery.html">リカバリー手順</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">Known Issues V1.1.0</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Updates:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="update.html">Updates Log</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Astroid</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">トラブルシューティング</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/trouble.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="trouble">
+<span id="id1"></span><h1>トラブルシューティング<a class="headerlink" href="#trouble" title="Permalink to this heading"></a></h1>
+<section id="id2">
+<h2>一般的な問題<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<p><strong>DDS_DIRECTが表示されない</strong></p>
+<ul>
+<li><p>電源を切り、再接続する</p></li>
+<li><p>デバイスのWiFiを何度かオンオフする</p></li>
+<li><p>HDMIをモニタに接続し、OSが起動しているか確認する。OSが起動しており、右上のWiFiアイコンが「wpa_supplicantと通信できません」と表示されている場合、WiFi設定に問題があります。これは現在のV1.0.0の問題です。</p>
+<blockquote>
+<div><p>選択肢は二つあります。</p>
+<ol class="arabic simple">
+<li><p>HDMIケーブルがなく、自分のケースかどうか確認できない場合は、システムリカバリーを実行するだけで問題が解決します。</p></li>
+<li><p>既に問題が確認されている場合は、コマンドラインウィンドウを開き、以下の二つのコマンドを入力してください。</p></li>
+</ol>
+<p>WiFi再活性化コマンド:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="n">dhcpcd</span>
+<span class="n">sudo</span> <span class="n">service</span> <span class="n">dhcpcd</span> <span class="n">restart</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>ハウジングを再組み立てする - WiFi信号関連の問題が解消されるかもしれません。</p></li>
+</ul>
+<p><strong>（Android）DDS_DIRECTは表示されるが、10.10.10.10にアクセスしても何も表示されない</strong></p>
+<p>これは、電話とDDSデバイス間の接続が正しく確立されていない場合に発生します。DDS_DIRECTはインターネットにアクセスできません（これはDDSではなくAndroidシステムの問題です）。以下の手順は、接続を正しく確立する方法を説明します。</p>
+<p>まず、デフォルトのパスワードでDDS_DIRECTに接続します。</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/dds_direct_pass.png"><img alt="DDS_DIRECTデフォルトパスコード" src="_images/dds_direct_pass.png" style="width: 400px;" /></a>
+</figure>
+<p>DDS_DIRECTがインターネットにアクセスできないという通知が表示されます。</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/dds_no_internet_access2.png"><img alt="DDS_DIRECTデフォルトパスコード" src="_images/dds_no_internet_access2.png" style="width: 400px;" /></a>
+</figure>
+<p>「オプションをタップ」を押すと、接続を維持するか尋ねるポップアップが表示されます。「はい」を選択してください。これで接続が確立されます。</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/dds_no_internet_access.png"><img alt="DDS_DIRECTデフォルトパスコード" src="_images/dds_no_internet_access.png" style="width: 400px;" /></a>
+</figure>
+<p>接続が正しく確立されると、画面上部にクエスチョンマーク付きの小さなWiFiアイコンが表示されます。</p>
+<p><strong>ビデオが非常に遅い、または深刻なラグがある</strong></p>
+<ul class="simple">
+<li><p>デバイスに近づいてみる</p></li>
+<li><p>別のUSBケーブルを試す</p></li>
+<li><p>別の電源を試す</p></li>
+</ul>
+<p><strong>接続できない</strong></p>
+<ul class="simple">
+<li><p>電源を切り、再接続する</p></li>
+<li><p>デバイスのWiFiを何度かオンオフする</p></li>
+<li><p>システムリカバリーを試す</p></li>
+</ul>
+<p><strong>DDS_DIRECTに接続されているが、astroid.localが見つからない</strong></p>
+<p>この問題は特に長時間システムを稼働させているときに時折発生します（少なくとも数時間）。これは単にホスト名astroidが見えないだけです。</p>
+<ul class="simple">
+<li><p>ほとんどの場合、システムを再起動するとこの問題は解決します。</p></li>
+<li><p>DDS_DIRECT経由で接続している場合は、astroid.localの代わりに10.10.10.10を試してください。Astroidがルーターに接続されている場合、ルーター設定ページに行き、接続されているデバイスの一覧を確認してください。AstroidのIPアドレスを見つけ、そのIPを使ってAstroidのウェブインターフェースにアクセスしてください。</p></li>
+<li><p>システムリカバリーを試す</p></li>
+<li><p>特にレンズ装着中にデバイスを落とした場合、カメラの問題の可能性があります。詳細はお問い合わせください。</p></li>
+</ul>
+<p><strong>RPiが動作しない。モニタ信号なし。電源ランプなし。読み取りランプなし。</strong></p>
+<p>方法は二つあります。DIYが得意な場合、新しいRPi4 2GBモデルを購入して交換できます。その場合、新しいライセンスコードを取得する必要があります。シリアル番号と名前を教えていただければ、新しいライセンスを発行いたします。</p>
+<p>二つ目の方法は、Astroidを当社に送ることです。ただし、保証期間が過ぎている場合は送料を負担する必要があります。</p>
+</section>
+<section id="efinder">
+<h2>eFinderの問題<a class="headerlink" href="#efinder" title="Permalink to this heading"></a></h2>
+<p><strong>スカイ認識が遅すぎる、または機能しない</strong></p>
+<ul class="simple">
+<li><p>通常、スカイ認識には0.1～5秒かかります。</p></li>
+<li><p>ゲインを少し上げたり下げたりして調整する。</p></li>
+</ul>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/gain_adjust.png"><img alt="ファインダーアライン" src="_images/gain_adjust.png" style="width: 400px;" /></a>
+</figure>
+<ul class="simple">
+<li><p>カメラを雲、月、建物がない方向に向ける</p></li>
+<li><p>レンズのフォーカスを確認する</p></li>
+<li><p>別のUSBケーブルを試す</p></li>
+<li><p>別の電源を試す</p></li>
+<li><p>システム情報ウィンドウにライセンスが正しく表示されているか確認する。表示されていない場合は再登録する。eFinderのライセンスコードがわからない場合はご連絡ください。</p></li>
+<li><p>レンズキャリブレーションを実行する</p></li>
+<li><p>サーマルグリースが適切に塗布されているか確認する（DIYキットのみ）</p></li>
+</ul>
+<p><strong>色合いが正しく見えない</strong>
+Astroidの色合いは自然光条件に固定されています。周囲に光源があると、色のバランスが崩れて見えることがあります。</p>
+</section>
+<section id="eaa">
+<h2>EAAスタッカーの問題<a class="headerlink" href="#eaa" title="Permalink to this heading"></a></h2>
+<p><strong>モバイルデバイスでトーンカーブの調整が機能しない</strong>
+これはバグです。次のアップデートで修正予定です。</p>
+</section>
+<section id="dr-pole">
+<h2>Dr. Poleの問題<a class="headerlink" href="#dr-pole" title="Permalink to this heading"></a></h2>
+<p>（ここにDr. Poleに関する問題を記載できます）</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="remotesystem.html" class="btn btn-neutral float-left" title="リモートシステムの構築" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="recovery.html" class="btn btn-neutral float-right" title="リカバリー手順" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, DynamicDeepSKY.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

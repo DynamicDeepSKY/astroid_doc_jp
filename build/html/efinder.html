@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eFinder &mdash; Astroid alpha documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=3d6c492d"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ARZoom" href="arzoom.html" />
+    <link rel="prev" title="Web Interface" href="basic.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Astroid
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Quick Start:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">クイックスタートガイド</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="basic.html">Web Interface</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">eFinder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sky-recognition">Sky Recognition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#light-pollution">Light Pollution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sky-recognition-with-moon-light-or-light-pollution">Sky Recognition with Moon Light or Light Pollution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#automatic-dso-search-autodso-search">Automatic DSO search </a></li>
+<li class="toctree-l2"><a class="reference internal" href="#geolocation-and-time">Geolocation and Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#marker">Marker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#time-adjust">Time Adjust</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#star-finder-search">Star Finder </a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ar-mode-ar">AR Mode </a></li>
+<li class="toctree-l2"><a class="reference internal" href="#click-and-find">Click and Find</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#camera-lock-and-unlock-lock">Camera Lock and Unlock </a></li>
+<li class="toctree-l2"><a class="reference internal" href="#star-list-starlist2">Star List </a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arzoom.html">ARZoom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eaa.html">EAA Stacker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drpole.html">Dr. Pole</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lenscal.html">レンズキャリブレーション</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timelapse.html">タイムラプス</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collimation.html">Collimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="systemupdate.html">システムアップデート</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remotesystem.html">リモートシステムの構築</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">TroubleShooting:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="trouble.html">トラブルシューティング</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovery.html">リカバリー手順</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">Known Issues V1.1.0</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Updates:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="update.html">Updates Log</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Astroid</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">eFinder</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/efinder.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="efinder">
+<span id="id1"></span><h1>eFinder<a class="headerlink" href="#efinder" title="Permalink to this heading"></a></h1>
+<p>下部のアイコンバーにある目のボタン <a class="reference internal" href="_images/liveps.png"><img alt="liveps" src="_images/liveps.png" style="width: 19.5px; height: 19.5px;" /></a> をクリックすると、Astroidの動作モードがeFinderに切り替わり、ライブスカイ認識が有効になります。eFinderを使用する前に、空が認識されていることを確認してください。空が認識されると、ステータスバーの赤い目アイコン <a class="reference internal" href="_images/eye_red.png"><img alt="eye_red" src="_images/eye_red.png" style="width: 19.2px; height: 19.2px;" /></a> が緑の目 <a class="reference internal" href="_images/eye_green.png"><img alt="eye_green" src="_images/eye_green.png" style="width: 19.2px; height: 19.2px;" /></a> に変わります。</p>
+<div class="admonition- admonition">
+<p class="admonition-title">重要</p>
+<p>スカイ認識モードは提供された5mmレンズでのみ動作することに注意してください。他のレンズを装着してAstroidをカメラとして使用することはできますが、スカイ認識は動作しません。</p>
+</div>
+<section id="sky-recognition">
+<h2>Sky Recognition<a class="headerlink" href="#sky-recognition" title="Permalink to this heading"></a></h2>
+<p>スカイ認識が有効になると、Astroidは空を認識しようとしますが、場合によっては失敗することがあります。5秒以内にスカイ認識のステータスアイコンが緑に変わらない場合は、以下を試してください。</p>
+<ul class="simple">
+<li><p>レンズのフォーカスが正しいか確認してください。ぼやけたフォーカスでは、Astroidは星をうまく認識できません。</p></li>
+<li><p>画像に十分な星が写っているか確認してください。</p></li>
+<li><p>ゲイン／露出を少し上げるか下げて調整してみてください。画像が明るすぎたり暗すぎたりしてはいけません。露出を上げると反応速度が遅くなることに注意してください。</p></li>
+<li><p>カメラを雲、月、建物のない方向に向けてください。通常、視界に障害物があると空の認識に時間がかかります。一度認識されたら、ゆっくりとカメラを目的の方向に動かしてください。</p></li>
+</ul>
+</section>
+<section id="light-pollution">
+<h2>Light Pollution<a class="headerlink" href="#light-pollution" title="Permalink to this heading"></a></h2>
+<p>スカイ認識の性能に影響を与える主要な要因の一つは空の状態です。最適な空の状態は、月光のないBortle 6以下の非常に暗い空です。Bortleは夜空の光害の量を見積もる指標です。以下のサイトから簡単にご自身の場所のBortleレベルを確認できます。</p>
+<p><a class="reference external" href="https://www.lightpollutionmap.info/">https://www.lightpollutionmap.info/</a></p>
+<p>以下の例は、ブリスベン市内周辺の3か所のBortleレベルを示しています。</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/bortle.png"><img alt="Bortle" src="_images/bortle.png" style="width: 600px;" /></a>
+</figure>
+<p>動作する場合もありますが、Bortle 6以上の高い光害地域ではスカイ認識の性能が保証されません。Bortle等級の詳細については、次の表を参照してください。</p>
+<table class="docutils align-center" id="id2">
+<caption><span class="caption-text">Bortle クラス</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 66.7%" />
+<col style="width: 33.3%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>空の状態</p></th>
+<th class="head"><p>Bortle クラス</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>素晴らしい暗黒空</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>平均的な暗黒空</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>田舎の空</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>田舎／郊外の移行</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>郊外</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>明るい郊外</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>郊外／都市の移行</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>都市の空</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-even"><td><p>都心の空</p></td>
+<td><p>9</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sky-recognition-with-moon-light-or-light-pollution">
+<h2>Sky Recognition with Moon Light or Light Pollution<a class="headerlink" href="#sky-recognition-with-moon-light-or-light-pollution" title="Permalink to this heading"></a></h2>
+<p>月明かりや光害がある環境下では、Bortle 6以下で月明かりのない状態での使用が推奨されますが、どうしてもそのような環境を避けられない場合、限定的な速度と精度でeFinderを動作させる方法があります。</p>
+<p>スカイ認識のデフォルト設定は、月明かりのないBortle 5に最適化された露出0.3秒、ゲイン140です。短い露出は応答速度を上げるのに役立ちますが、高いゲイン設定が必要であり、これが光害や月明かりの条件下でノイズの多い画像を引き起こします。ノイズの多い画像はスカイ認識の性能を低下させます。</p>
+<p>簡単な解決策は、応答速度を犠牲にして露出を延ばし、ゲインを下げることです。以下の例は、露出とゲインの設定が月明かりの条件下でノイズを低減する方法を示しています。</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/light_condition_low_exposure.png"><img alt="Low exposure" src="_images/light_condition_low_exposure.png" style="width: 400px;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/light_condition_max_exposure.png"><img alt="Max exposure" src="_images/light_condition_max_exposure.png" style="width: 400px;" /></a>
+</figure>
+</section>
+<section id="automatic-dso-search-autodso-search">
+<h2>Automatic DSO search <a class="reference internal" href="_images/autodso_search.png"><img alt="autodso_search" src="_images/autodso_search.png" style="width: 26.0px; height: 26.0px;" /></a><a class="headerlink" href="#automatic-dso-search-autodso-search" title="Permalink to this heading"></a></h2>
+<p>自動DSO検索は、特別な準備なしに自由に夜空を探索したいときに非常に便利です。これを有効にすると、現在のメイン望遠鏡の視界に最も近いDSOを自動的に見つけ、その形状とIDを画面に表示します。</p>
+<p>デフォルトでは、この機能はNGCの天体を表示しますが、「Astro Tools Menu」→「Search Setting」で別のカタログを選択できます。また、接眼レンズの視野に応じて、小さすぎたり大きすぎたりする星を見つけたくない場合があります。MinおよびMaxサイズオプションを調整してください。</p>
+<p>このオプションをオンにした後、画面に何も表示されない場合は、少しズームインして空の別の部分を移動してみてください。</p>
+</section>
+<section id="geolocation-and-time">
+<h2>Geolocation and Time<a class="headerlink" href="#geolocation-and-time" title="Permalink to this heading"></a></h2>
+<p>システム時刻はデバイスの時間に従って自動的に更新されますが、経度と緯度の情報は手動で入力する必要があります。初期設定は0で、上部のステータスアイコン位置に赤いGPSアイコンが表示されます。予測された空を正しく描くために、時間とGPS情報は重要です。</p>
+</section>
+<section id="marker">
+<h2>Marker<a class="headerlink" href="#marker" title="Permalink to this heading"></a></h2>
+<p>eFinderモードを有効にすると、すぐに画像上に赤いマークが表示されます。赤い円の中心はメイン望遠鏡が見ている場所です。この機能を初めて望遠鏡で使用する場合、マーカーを移動させて望遠鏡の視界と整列させる必要があるかもしれません。詳細な手順は <a class="reference internal" href="quickstart.html#quickstart"><span class="std std-ref">eFinder Align</span></a> を参照してください。</p>
+</section>
+<section id="time-adjust">
+<h2>Time Adjust<a class="headerlink" href="#time-adjust" title="Permalink to this heading"></a></h2>
+<p>デフォルトでは、プラネタリウムは現在の空を表示します。しかし、タイムバーを調整することで過去や未来の空を描画できます。サポートされる範囲は現在の時間から-10時間から+10時間です。</p>
+</section>
+<section id="star-finder-search">
+<h2>Star Finder <a class="reference internal" href="_images/search.png"><img alt="search" src="_images/search.png" style="width: 26.0px; height: 26.0px;" /></a><a class="headerlink" href="#star-finder-search" title="Permalink to this heading"></a></h2>
+<p>AstroidにはNGC、IC、M、HIPの星リストが組み込まれています。Star Finderを使用するには、興味のある星の番号を探して検索バーに入力します。写真やその他の情報も表示されます。</p>
+<p>Star Finderリストで星をクリックすると、Astroidはターゲットの位置と、左右および上下方向にどれだけ回転すべきかを度数で表示します。この角度に従ってマウントを調整してください。現在、EQマウントのガイドラインはサポートされていませんが、この機能は将来のアップデートで追加される予定です。</p>
+</section>
+<section id="ar-mode-ar">
+<h2>AR Mode <a class="reference internal" href="_images/AR.png"><img alt="AR" src="_images/AR.png" style="width: 25.6px; height: 25.6px;" /></a><a class="headerlink" href="#ar-mode-ar" title="Permalink to this heading"></a></h2>
+<p>デフォルトでは、画面をドラッグすると常にAzAlt方向に動きます。しかし、画面表示をカメラの視界に固定し、世界を動かす方が便利な場合もあります。この機能を有効にするには、設定メニューでCameraViewオプションを有効にしてください。</p>
+</section>
+<section id="click-and-find">
+<h2>Click and Find<a class="headerlink" href="#click-and-find" title="Permalink to this heading"></a></h2>
+<p>Astroidの最もユニークな機能の一つは、カメラの画像から星やDSOの情報をクリックして見つけられることです。EAAスタッカーと組み合わせることで、ただリストから星を選ぶだけでなく、視覚的に対話的な方法で夜空を探索できます。</p>
+</section>
+<section id="camera-lock-and-unlock-lock">
+<h2>Camera Lock and Unlock <a class="reference internal" href="_images/lock.png"><img alt="lock" src="_images/lock.png" style="width: 25.6px; height: 25.6px;" /></a><a class="headerlink" href="#camera-lock-and-unlock-lock" title="Permalink to this heading"></a></h2>
+<p>ユーザーインターフェースはデフォルトでカメラ画像の中心に自動的に追従します。自動カメラ追従モードを解除したい場合は、左側のロックボタン <a class="reference internal" href="_images/lock.png"><img alt="lock" src="_images/lock.png" style="width: 25.6px; height: 25.6px;" /></a> をクリックしてください。</p>
+<p>もう一度ボタンをクリックすると、ロックモードに切り替わり、再びカメラを追従します。</p>
+</section>
+<section id="star-list-starlist2">
+<h2>Star List <a class="reference internal" href="_images/starlist.png"><img alt="starlist2" src="_images/starlist.png" style="width: 25.6px; height: 25.6px;" /></a><a class="headerlink" href="#star-list-starlist2" title="Permalink to this heading"></a></h2>
+<p>Star Finderウィンドウの追加ボタン <a class="reference internal" href="_images/add-list.png"><img alt="add_to_list" src="_images/add-list.png" style="width: 25.6px; height: 25.6px;" /></a> をクリックすると、自分専用の星リストを作成できます。</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/searched_star.png"><img alt="Max exposure" src="_images/searched_star.png" style="width: 200px;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/auto_search.png"><img alt="Max exposure" src="_images/auto_search.png" style="width: 400px;" /></a>
+</figure>
+<p>追加された星はStar Listウィンドウに表示されます。Star Listウィンドウを開くには <a class="reference internal" href="_images/starlist.png"><img alt="starlist" src="_images/starlist.png" style="width: 25.6px; height: 25.6px;" /></a> をクリックしてください。</p>
+<p>また、<a class="reference internal" href="_images/search_list.png"><img alt="search_list" src="_images/search_list.png" style="width: 25.6px; height: 25.6px;" /></a> アイコンをクリックすると、現在の望遠鏡の近くにあるDSOを自動的に検索してリストに追加できます。</p>
+<p><a class="reference internal" href="_images/search_list.png"><img alt="search_list" src="_images/search_list.png" style="width: 25.6px; height: 25.6px;" /></a> 近くのDSOを検索します。デフォルトではMが使用されますが、Astro Tools MenuでNGCやICに変更できます。</p>
+<p>リストの保存と読み込みには、以下のアイコンを使用します。</p>
+<p><a class="reference internal" href="_images/save_list.png"><img alt="save_list" src="_images/save_list.png" style="width: 25.6px; height: 25.6px;" /></a> リストを保存します。リストはAstroidの内部メモリに保存されます。</p>
+<p><a class="reference internal" href="_images/download_list.png"><img alt="download_list" src="_images/download_list.png" style="width: 25.6px; height: 25.6px;" /></a> リストを読み込みます。</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="basic.html" class="btn btn-neutral float-left" title="Web Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arzoom.html" class="btn btn-neutral float-right" title="ARZoom" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, DynamicDeepSKY.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
